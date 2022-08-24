@@ -13,6 +13,7 @@
             Console.WriteLine("2. Empty stack -- Peek and then Pop");
             Console.WriteLine("Queue!!!");
             Console.WriteLine("3. Create a queue");
+            Console.WriteLine("4. Delete from queue");
             int choice = int.Parse(Console.ReadLine());
 
             switch (choice)
@@ -35,6 +36,14 @@
                     queue.EnQueue(56);
                     queue.EnQueue(30);
                     queue.EnQueue(70);
+                    queue.ShowQueue();
+                    break;
+                case 4:
+                    queue.EnQueue(56);
+                    queue.EnQueue(30);
+                    queue.EnQueue(70);
+                    queue.ShowQueue();
+                    queue.DeQueue();
                     queue.ShowQueue();
                     break;
                 default:
